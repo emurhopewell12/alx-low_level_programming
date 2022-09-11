@@ -1,12 +1,13 @@
 #include <stdio.h>
-/* *main- this is the entrypoints
+
+/*
+ * main- prints exactly "Programming is like building a multilingual puzzle.
  *
- *
- *
- *  *Return: Everytime 0 (Successful)
+ * Return: Everytime 0 (Successful)
  */
+
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");		
-return (0);
+	puts("\"Programming is like building a multilingual puzzle");		
+	return (0);
 }
