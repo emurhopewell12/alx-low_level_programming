@@ -42,4 +42,3 @@ void print_number(int na)
 			_putchar(n + '0');
 }
 }
-
