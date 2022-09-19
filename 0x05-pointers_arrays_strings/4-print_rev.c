@@ -5,6 +5,7 @@
  * @s: the used string reference pointer
  * Return: 0
  */
+
 void print_rev(char *s)
 {
 	int i = 0;
@@ -13,5 +14,5 @@ void print_rev(char *s)
 		i++;
 	while (i--)
 		_putchar(s[i]);
-	_putchar('\n');
+_putchar('\n');
 }
