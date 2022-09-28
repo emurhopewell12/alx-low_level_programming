@@ -7,7 +7,7 @@
  * Return: -1 or sqrt of c
  */
 
-int _sqrt_recursion(int n)
+int sqrt_check(int s, int c)
 {
 	if (s * s == c)
 		return (s);
@@ -27,5 +27,5 @@ int _sqrt_recursion(int n)
 		return (-1);
 	if (n == 0 || n == 1)
 		return (n);
-	return (sqrt_check(1, n));
+		return (sqrt_check(1, n));
 }
