@@ -28,6 +28,6 @@ char *_strdup(char *str)
 	if (strCopy == 0)
 		return (NULL);
 
-		strcpy(strCopy, str);
+	strcpy(strCopy, str);
 return (strCopy);
 }
