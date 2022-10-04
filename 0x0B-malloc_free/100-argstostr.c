@@ -14,7 +14,7 @@ int _strlen(char *s)
 
 	for (; s[size] != '\0'; size++)
 		;
-	return (size);
+return (size);
 }
 
 /**
@@ -35,7 +35,7 @@ char *argstostr(int ac, char **av)
 	for (; i < ac; i++, nc++)
 		nc += _strlen(av[i]);
 
-	s = malloc(sizeof(char) * nc + 1);
+		s = malloc(sizeof(char) * nc + 1);
 	if (s == 0)
 		return (NULL);
 
@@ -47,7 +47,7 @@ char *argstostr(int ac, char **av)
 		s[cmpt] = '\n';
 		cmpt++;
 }
-	s[cmpt] = '\0';
+		s[cmpt] = '\0';
 
 return (s);
 }
