@@ -18,7 +18,7 @@ int _strlen(char *s)
 }
 
 /**
- * argstostr - concatenates all the arguments
+ * *argstostr - concatenates all the arguments
  * @ac: counts
  * @av: arguments
  * Return: a pointer to a string
