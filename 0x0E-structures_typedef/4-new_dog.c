@@ -16,7 +16,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (new_dog == NULL)
 {
-			return (NULL);
+		return (NULL);
 }
 
 	name_size = sizeof(name) + 1;
