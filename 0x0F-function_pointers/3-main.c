@@ -1,39 +1,34 @@
 #include "3-calc.h"
-
 /**
- * main - This calculates the values of two numbers
- * @argc: This is the argument count
- * @argv: This is the argument vector
- *
- * Return: 0 if succesful
+ * main - program that performs simple operations.
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: 0 if success otherwise exit with error number
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int (*f)(int a, int b);
 	int a, b;
+	/* @p is a function pointer that point to the given operation */
+	int (*p)(int, int);
 
 	if (argc != 4)
 {
 		printf("Error\n");
 		exit(98);
 }
-
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-
-	if ((argv[2][0] == '/' || argv[2][0] == '%') && b == 0)
-
-	printf("Error\n");
-	exit(100);
-}
-
-	f = get_op_func(argv[2]);
-	if (f == NULL)
+	p = get_op_func(argv[2]);
+	if (p == NULL)
 {
 		printf("Error\n");
 		exit(99);
 }
-
-		printf("%d\n", f(a, b));
-		return (0);
+	if ((p == op_div || p == op_mod) && b == 0)
+{
+		printf("Error\n");
+		exit(100);
+}
+	printf("%d\n", p(a, b));
+	return (0);
 }
